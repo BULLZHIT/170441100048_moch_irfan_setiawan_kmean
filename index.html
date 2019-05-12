@@ -628,39 +628,39 @@
 <h1 id="agoritma-k-mean-clustering">Agoritma K-Mean Clustering<a class="headerlink" href="#agoritma-k-mean-clustering" title="Permanent link">&para;</a></h1>
 <ol>
 <li>Menentukan secara acak K titik data sebagai pusat cluster yang disebut centroid.</li>
-<li>Menandai masing masing x_i masuk ke ke cluster tertentu, dengan cara menghitung  jarak x_i ke masing masing pusat cluster (centroid) dan memasukkan x_i  anggota pusat cluster tertentu tersebut jika memiliki jarak terdekat dengan rumus euclidian distance :<img alt="img" src="assets/images/distance.png" /></li>
+<li>Menandai masing masing x_i masuk ke ke cluster tertentu, dengan cara menghitung  jarak x_i ke masing masing pusat cluster (centroid) dan memasukkan x_i  anggota pusat cluster tertentu tersebut jika memiliki jarak terdekat dengan rumus euclidian distance :<img alt="Material for MkDocs" src="assets/images/distance.png" /></li>
 <li>Menentukan pusat cluster baru dengan menghitungya  rata rata dari anggota cluster</li>
 <li>Ulangai langkah 2 dan 3 sampai tidak tidak ada  dari anggota setiap cluster berubah tempat kelompoknya</li>
 </ol>
 <p>Contoh data :</p>
-<p><img alt="1557561390408" src="assets/images/data.png" /></p>
+<p><img alt="Material for MkDocs" src="assets/images/data.png" /></p>
 <p><strong>Langkah 1:</strong></p>
 <blockquote>
 <p>Ininialisasi: Secara acak dipilih dua centroid (k=2) untuk 2 cluster .</p>
 <p>Misal 2 centroid adalah: m1=(1.0,1.0) and m2=(5.0,7.0).</p>
 </blockquote>
-<p><img alt="1557561568829" src="assets/images/data1.png" /></p>
-<p><img alt="1557561580494" src="assets/images/data2.png" /></p>
+<p><img alt="Material for MkDocs" src="assets/images/data1.png" /></p>
+<p><img alt="Material for MkDocs" src="assets/images/data2.png" /></p>
 <p><strong>Langkah 2:</strong></p>
 <p>•Sehingga, Kita dapatkan dua cluster  dengan anggotanya:</p>
 <p>{1,2,3} and {4,5,6,7}.</p>
-<p><img alt="1557561937205" src="assets/images/data4.png" /></p>
+<p><img alt="Material for MkDocs" src="assets/images/data4.png" /></p>
 <p>•Centroid baru adalah:</p>
-<p><img alt="1557561763154" src="assets/images/data3.png" /></p>
+<p><img alt="Material for MkDocs" src="assets/images/data3.png" /></p>
 <p><strong>Langkah 3:</strong></p>
 <p>•Sekarang kita gunakan centroid baru ini untuk menghitung jarak euclidian dari masing masing objek</p>
 <p>•Sehingga dapatkan cluster baru yaitu:</p>
 <p>{1,2} and {<strong>3</strong>,4,5,6,7} </p>
 <p>•Centroid berikutnya adalah yaitu: m1=(1.25,1.5) dan m2 = (3.9,5.1)</p>
-<p><img alt="1557562004600" src="assets/images/data5.png" /></p>
+<p><img alt="Material for MkDocs" src="assets/images/data5.png" /></p>
 <p><strong>Langkah 4</strong>:</p>
 <p>•Cluster baru diperoleh diperoleh dengan masing masing anggotanya yaitu:</p>
 <p>{1,2} dan {3,4,5,6,7}</p>
 <p>•Selanjutnya , karena tidak ada perubahan anggota dari cluster. </p>
 <p>•Sehingga hasil akhir dari 2 cluster adalah {1,2} dan {3,4,5,6,7}. </p>
-<p><img alt="1557562072665" src="assets/images/data6.png" /></p>
+<p><img alt="Material for MkDocs" src="assets/images/data6.png" /></p>
 <p><strong>Visualisasi data :</strong></p>
-<p><img alt="1557562119264" src="assets/images/data7.png" /></p>
+<p><img alt="Material for MkDocs" src="assets/images/data7.png" /></p>
 <h1 id="implementasi-k-mean-clustering-pada-python">Implementasi K-Mean Clustering pada python<a class="headerlink" href="#implementasi-k-mean-clustering-pada-python" title="Permanent link">&para;</a></h1>
 <p>hal yang diperlukan dalam pengimplementasian</p>
 <ul>
@@ -684,7 +684,7 @@
 <pre class="codehilite"><code class="language-python">dataset=pd.read_csv('crredit.csv')
 dataset.describe()</code></pre>
 
-<p><img alt="img" src="assets/images/k-mean1.png" /></p>
+<p><img alt="Material for MkDocs" src="assets/images/k-mean1.png" /></p>
 <p>data yang digunakan pendapatan dan rating_pengeluaran</p>
 <pre class="codehilite"><code>X = dataset.iloc[:, [3, 4]].values</code></pre>
 
@@ -759,9 +759,9 @@ plt.legend()
 plt.title('Plot of data points')
 plt.show()</code></pre>
 
-<p><img alt="img" src="assets/images/k-mean2.png" /></p>
+<p><img alt="Material for MkDocs" src="assets/images/k-mean2.png" /></p>
 <p>mengelompokkan data berdasarkan cluster </p>
-<p><img alt="img" src="assets/images/k-mean3.png" /></p>
+<p><img alt="Material for MkDocs" src="assets/images/k-mean3.png" /></p>
                 
                   
                 
